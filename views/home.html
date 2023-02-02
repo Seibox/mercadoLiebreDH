@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> <!-- Para pdoer utilizar google fonts -->
+    <script src="https://kit.fontawesome.com/a8a8077e98.js" crossorigin="anonymous"></script> <!-- Para poder utilizar font aweasome -->
     <title>Document</title>
 </head>
 <body>
     <header>
         <img src="/images/logo-mercado-liebre.svg" alt="logo" class="logo">
-        <input type="search" name="" id="">
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        <input type="search" name="" id="" placeholder="Busacar productos, marcas, etc.."><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        <p> <i class="fa-sharp fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         <ul>
             <li><a href="#">Ofertas</a></li>
             <li><a href="#">Tiendas Oficiales</a></li>
@@ -19,79 +24,84 @@
             <li><a href="#">ayuda</a></li>
         </ul>
         <ul>
-            <li><a href="#">Creá tu cuenta</a></li>
-            <li><a href="#">Ingresá</a></li>
-            <li><a href="#">Mis compras</a></li>
+            <li><a href="#">Creá tu cuenta  <i class="fa-sharp fa-solid fa-id-card"></i> </a></li>
+            <li><a href="#">Ingresá <i class="fa-sharp fa-solid fa-right-to-bracket"></i></a></li>
+            <li><a href="#">Mis compras <i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
         </ul>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
     <main>
         <section>
-            <h2>Sección: Basado en tu última visita</h2>
+            <h2>Basado en tu última visita</h2>
             <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera"> <!-- Para poder acceder a una imágen que ya tengo descargada
                                             armo carpeta public archivos estáticos, para poder acceder a ellos desde
                                             el frontend
                                         Debo avisar a express que guarde esos arhivos en la carpeta public
                                     Eso lo gafo con app.use(express.static('public')) -->
-            <p id="prueba">$6770</p>
-            <p>40% OFF</p>
-            <p>Cafetera Moulinex</p>
+            <p class="precio">$6770</p>
+            <p class="descuento">40% OFF</p>
+            <p class="descrip">Cafetera Moulinex</p>
             <img src="/images/img-macbook-pro-2019.jpg" alt="Macbook">
-            <p class="textoVioleta">$230000</p>
-            <p>20% off</p>
-            <p>MacBook Pro 2019</p>
+            <p class="precio">$230000</p>
+            <p class="descuento">20% off</p>
+            <p class="descrip">MacBook Pro 2019</p>
             <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung">
-            <p>%70500</p>
-            <p>10% off</p>
-            <p>Samsung Galaxy S10</p>
+            <p class="precio">%70500</p>
+            <p class="descuento">10% off</p>
+            <p class="descrip">Samsung Galaxy S10</p>
             <img src="/images/img-tv-samsung-smart.jpg" alt="Smart TV">
-            <p>$23200</p>
-            <p>5%off</p>
-            <p>SmartTV Samsung 43"</p>
+            <p class="precio">$23200</p>
+            <p class="descuento"2>5%off</p>
+            <p class="descrip">SmartTV Samsung 43"</p>
         </section>
         <section>
-            <h2>Sección de ofertas</h2>
-            <h2>Sección: Basado en tu última visita</h2>
+            
+            <h2>Basado en tu última visita</h2>
             <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera"> <!-- Para poder acceder a una imágen que ya tengo descargada
                                             armo carpeta public archivos estáticos, para poder acceder a ellos desde
                                             el frontend
                                         Debo avisar a express que guarde esos arhivos en la carpeta public
                                     Eso lo gafo con app.use(express.static('public')) -->
-            <p>$6770</p>
-            <p>40% OFF</p>
-            <p>Cafetera Moulinex</p>
+            <p class="precio">$6770</p>
+            <p class="descuento">40% OFF</p>
+            <p class="descrip">Cafetera Moulinex</p>
             <img src="/images/img-macbook-pro-2019.jpg" alt="Macbook">
-            <p>$230000</p>
-            <p>20% off</p>
-            <p>MacBook Pro 2019</p>
+            <p class="precio">$230000</p>
+            <p class="descuento">20% off</p>
+            <p class="descrip">MacBook Pro 2019</p>
             <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung">
-            <p>%70500</p>
-            <p>10% off</p>
-            <p>Samsung Galaxy S10</p>
+            <p class="precio">$70500</p>
+            <p class="descuento">10% off</p>
+            <p class="descrip">Samsung Galaxy S10</p>
             <img src="/images/img-tv-samsung-smart.jpg" alt="Smart TV">
-            <p>$23200</p>
-            <p>5%off</p>
-            <p>SmartTV Samsung 43"</p>
+            <p class="precio">$23200</p>
+            <p class="descuento">5%off</p>
+            <p class="descrip">SmartTV Samsung 43"</p>
         </section>
     </main>
     <footer>
         <section>
+            <i class="fa-sharp fa-solid fa-credit-card"></i>
             <h4>Pagá con tarjeta o en efectivo</h4>
             <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                 puntos de pago. ¡Y siempre es seguro!</p>
         </section>
         <section>
+            <i class="fa-sharp fa-solid fa-gift"></i>
             <h4>Envío gratis desde $2500</h4>
             <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                 productos. Es un beneficio de Mercado Puntos.</p>
         </section>
         <section>
+            <i class="fa-solid fa-user-shield"></i>
             <h4>Seguridad, de principio a fin</h4>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegid@.</p>
         </section>
         <section>
-            <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
-            <p></p>
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>
 </body>
