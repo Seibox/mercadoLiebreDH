@@ -8,7 +8,11 @@ header li{
     color: #03264C; 
 }
 .burger-menu{
-    text-align:center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.icon-burger-menu{
+    margin: 0.5rem auto;
     border: solid #1259c3 1px;
     background-color: #1259c3;
 }
@@ -24,9 +28,7 @@ h2{
 .descuento .descrip{
     font-size: 16px;
 }
-.burger-menu{
-    font-size: 12px;
-}
+
 footer{
     text-align: center;
 }
