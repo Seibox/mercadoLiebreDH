@@ -84,3 +84,22 @@ footer p{
     color:#666;
 }
 
+/* Media queries */
+@media(min-width:361px){
+    .bloque-art{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descrip{
+        display: inline-block;
+    }
+ 
+}
+@media(min-width:769px){
+    .bloque-art{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descrip{
+        display: inline-block;
+    }
+ 
+}
