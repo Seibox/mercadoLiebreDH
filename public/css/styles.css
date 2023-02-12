@@ -4,13 +4,14 @@
 /* Header */
 header{
     background-color:#EAC926;
+  
 }
 header li{
-    color: #03264C; 
+    color: #03264C;
+    display: none;
 }
 .burger-menu-div{ 
     text-align: center;
-  
 }
 .icon-burger-menu{
     padding: 0.75rem 0.5rem;
@@ -92,6 +93,13 @@ footer p{
     .descrip{
         display: inline-block;
     }
+    .burger-menu-div{ 
+        display: none;
+    }
+    header li{
+        display: inline;
+    }
+  
  
 }
 @media(min-width:769px){
@@ -99,7 +107,14 @@ footer p{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .descrip{
-        display: inline-block;
+        display: block;
     }
+    .burger-menu-div{ 
+        display: none;
+    }
+    header li{
+        display: block;
+    }
+   
  
 }
