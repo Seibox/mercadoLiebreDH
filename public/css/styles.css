@@ -20,17 +20,53 @@ header li{
     border-radius: 0.2rem;
 }
 /* Main */
+main{
+    width: 90%;
+    text-align: center;
+    background-color: #ebebeb;
+    margin: auto;
+}
 p{
     font-size: 12px;
 }
 h2{
-    font-size: 24px;
+    font-size: 36px;
 }
 .precio{
-    font-size: 18px;
+    font-size: 28px;
+    font-weight: bold;
 }
-.descuento .descrip{
-    font-size: 16px;
+.descuento{
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -1.2rem;
+    margin-bottom: 1rem;
+}
+.descrip{
+    display: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+.fa-truck{
+    color: green;
+    display: block;
+    font-size: 2rem;
+}
+
+
+
+.bloque-art{
+    display: inline-block;
+    background-color: white;
+    width: fit-content; 
+    margin-bottom: 10px;
+}
+.bloque-info{
+    text-align: left;
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px; 
 }
 /* Footer */
 footer{
