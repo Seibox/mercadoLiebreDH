@@ -124,6 +124,7 @@ p{
 }
 .descrip{
     display: none;
+    color: white;
     height: 2rem;
     font-size: 16px;
     font-weight: 600;
@@ -133,6 +134,10 @@ p{
     position: absolute;
     right: 10%;
     top: -10%;
+    transition: transform 600ms;
+}
+.fa-truck:hover{
+   transform:  rotate(-90deg);
 }
 
 .precioYDescuento{
@@ -140,6 +145,7 @@ p{
     flex-wrap: nowrap;
     justify-content: flex-start;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 article{
@@ -191,7 +197,11 @@ footer p{
         width: 47%;
     }
     .descrip{
-        display: none;
+        display: block;
+        transition: color 450ms;
+    }
+    .descrip:hover{
+        color: black;
     }
     
     .links{
@@ -211,9 +221,6 @@ footer p{
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 22%;
-    }
-    .descrip{
-        display: none;
     }
 
     .banner{
@@ -252,8 +259,11 @@ footer p{
     }
     .descrip{
         display: block;
+        transition: color 450ms;
     }
-    
+    .descrip:hover{
+        color: black;
+    }
     .burger-menu-div{ 
         display: none;
     }
