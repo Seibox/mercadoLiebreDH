@@ -10,6 +10,7 @@ i{
 }
 img{
     width: 100%;
+    
 }
 body{
     position: absolute;
@@ -28,14 +29,17 @@ header{
     height: 22vh;
 }
 
+
 .headerFlex{
     display: flex;
     flex-wrap: wrap;
     align-items: center; 
+    justify-content: space-between;
 }
 
 .logo{
     width: 50%;
+    max-height: 18vh;
 }
 .buscador{
     display: flex;
@@ -227,14 +231,17 @@ footer p{
     }
 
     .banner{
-        margin-top: 9vh;
+        margin-top: 12vh;
     }
     header{
-        height: 9vh;
+        height: 12vh;
+    }
+    .logo{
+        max-height: 8vh;
     }
     .headerFlex{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     .logo{
         width: 33%;

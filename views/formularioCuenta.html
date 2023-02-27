@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">
+            Nombre
+            <input type="text" id="nombre" name="nombre">
+        </label>
+        <label for="apellido">
+            Apellido
+            <input type="text" id="apellido" name="apellido">
+        </label>
+        <label for="usuario">
+            Nombre de usuario
+            <input type="text" id="usuario" name="usuario">
+        </label>
+        <label for="fechaNacimiento">
+            Fecha de nacimiento
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        </label>
+        <label for="domicilio">
+            Domicilio
+            <input type="text" id="domicilio" name="domicilio">
+        </label>
+        <label for="perfil">
+            ¿Qué deseas hacer en mercadoliebre?
+            <select name="perfil" id="perfil">
+                <option value="compra">Comprar</option>
+                <option value="venta">Vender</option>
+            </select>
+        </label>
+        <div class="intereses">
+            <label for="electro">Electro<input type="checkbox" name="intereses" id="electro"></label>
+            <label for="moda">Moda <input type="checkbox" name="intereses" id="moda"></label>
+            <label for="hogar">Hogar <input type="checkbox" name="intereses" id="hogar"></label>
+            <label for="jugueteria">Jugueteria <input type="checkbox" name="intereses" id="jugueteria"></label>
+            <label for="vida sana">Vida sana <input type="checkbox" name="intereses" id="vidaSana"></label>
+        </div>
+            
+        <label for="fotoDeUsuario">
+            <input type="file">
+        </label>
+        <label for="contraseña">
+            <input type="password" name="contraseña" id="contraseña">
+        </label>
+        <label for="contraseña2">
+            <input type="password" name="contraseña2" id="contraseña2">
+        </label>
+        <a href="/"><button type="submit">Enviar</button></a>
+        <a href="/"><button type="reset">Reset</button></a>
+
+    </form>
+</body>
+</html>
