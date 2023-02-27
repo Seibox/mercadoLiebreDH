@@ -116,11 +116,13 @@ label{
     margin: 0.25rem; 
 }
 .botonFotoUsuario{
-    width: 25%;
+    
     display: block;
+    width: 8.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
+    color:transparent;
 }    
 button{
     width: 33%;
