@@ -181,7 +181,10 @@ footer section{
 footer i{
    
    color: #1259c3;;
-   
+   transition: color 600ms;
+}
+footer i:hover{
+    color:#EAC926;
 }
 footer h4{
     color:black;
@@ -270,6 +273,17 @@ footer p{
     header li{
         display: block;
     }
-   
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    footer section{
+        width: 30%;
+    }
+    .copyright{
+        width: 100%;
+    } 
  
 }
