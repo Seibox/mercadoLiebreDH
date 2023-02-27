@@ -15,6 +15,7 @@ img{
 body{
     position: absolute;
     background-color: #ebebeb;
+    width: 100%;
 }
 /* Header */
 header{
@@ -87,14 +88,42 @@ header li{
     font-size: 1.25rem;
     padding: 0.75rem 0.5rem;
     margin: 1.2rem;
+    margin-top: 0.5rem;
     color: #ebebeb;
     background-color: #1259c3;
     border-radius: 0.25rem;
 }
 /* main */
 .formulario{
-    margin-top: 22vh;
+    margin-top: 32vh;
+    background-color: #EAC9261f;
+    width: 80%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    font-size: 22px;
+    text-align: center;
 }
+.formulario button{
+    width: 33%;
+    height: 2rem;
+    margin-top: 2rem;
+}
+label{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1.5rem;
+    width: 50%
+}
+
+
 /* Media queries */
 @media(min-width:361px){
     .links{
@@ -112,7 +141,7 @@ header li{
 }
 @media(min-width:768px){
     .formulario{
-        margin-top: 12vh;
+        margin-top: 18vh;
     }
     header{
         height: 12vh;
