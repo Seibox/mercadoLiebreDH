@@ -15,11 +15,9 @@ img{
 body{
     position: absolute;
     background-color: #ebebeb;
+    width:100%
 }
-
-
 /* Header */
-
 header{
     position: fixed;
     z-index: 10;
@@ -95,122 +93,42 @@ header li{
     border-radius: 0.25rem;
 }
 
-/* Main */
-main{
-    
-    top: 50%;
-    width: 90%;
-    text-align: center;
-    margin: auto;
-
-}
-.banner{
-    margin-top: 22vh;
-}
-.titulares{
-    font-size: 24px;
-    color:#666;
-    text-align: left;
-    margin: 1.5rem 1rem 0.75rem;
-}
-p{
-    font-size: 12px;
-}
-.precio{
-    font-size: 18px;
-    font-weight: bold;
-}
-.descuento{
-    font-size: 16px;
-    color: #39b54a;
-    font-weight: bold;
-    margin-left: 0.25rem;  
-}
-.descrip{
-    display: none;
-    color: white;
-    height: 2rem;
-    font-size: 16px;
-    font-weight: 600;
-}
-.fa-truck{
-    color: #39b54a;
-    position: absolute;
-    right: 10%;
-    top: -10%;
-    transition: transform 600ms;
-}
-.fa-truck:hover{
-   transform:  rotate(-90deg);
-}
-
-.precioYDescuento{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-}
-
-article{
-    position: relative;
-    width: 90%;
-    background-color: white;
-    margin: 5px 5px;
-}
-.bloque-info{
-    position: relative;
-    text-align: left;
-    background-color:white;
-    border-top: 1px solid #ebebeb;
-    padding-left: 10px;
-    padding-bottom: 1rem;
-}
-
-main section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-/* Footer */
-footer{
-    margin-top: 2rem;
-    text-align: center;
-}
-footer section{
-    margin-bottom: 1em;
-}
-footer i{
+.formulario{
+    margin-top: 32vh;
+    background-color: #EAC9261f;
+    width: 80%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
    
-   color: #1259c3;;
-   transition: color 600ms;
+    max-width: 1000px;
+    font-size: 22px;
+    text-align: center;
 }
-footer i:hover{
-    color:#EAC926;
+
+label{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+.checkLabel{
+    margin-top: 0.25rem;
+    margin: 0.25rem; 
 }
-footer h4{
-    color:black;
-}
-footer p{
-    color:#666;
+.botonFotoUsuario{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}    
+button{
+    width: 33%;
+    height: 2rem;
 }
 
 /* Media queries */
 @media(min-width:361px){
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 47%;
-    }
-    .descrip{
-        display: block;
-        transition: color 450ms;
-    }
-    .descrip:hover{
-        color: black;
-    }
-    
     .links{
         display:flex;
         justify-content: space-between;
@@ -223,15 +141,9 @@ footer p{
         width: 30%;
     }
 }
-
 @media(min-width:768px){
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 22%;
-    }
-
-    .banner{
-        margin-top: 12vh;
+    .formulario{
+        margin-top: 15vh;
     }
     header{
         height: 12vh;
@@ -266,30 +178,10 @@ footer p{
         width: 50%;
         justify-content: flex-end;   
     }
-    .descrip{
-        display: block;
-        transition: color 450ms;
-    }
-    .descrip:hover{
-        color: black;
-    }
     .burger-menu-div{ 
         display: none;
     }
     header li{
         display: block;
     }
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-    }
-    footer section{
-        width: 30%;
-    }
-    .copyright{
-        width: 100%;
-    } 
- 
 }

@@ -4,57 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesCuenta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> <!-- Para pdoer utilizar google fonts -->
+    <script src="https://kit.fontawesome.com/a8a8077e98.js" crossorigin="anonymous"></script> <!-- Para poder utilizar font aweasome -->
     <title>Document</title>
 </head>
-<body>
-    <form action="">
-        <label for="nombre">
-            Nombre
-            <input type="text" id="nombre" name="nombre">
-        </label>
-        <label for="apellido">
-            Apellido
-            <input type="text" id="apellido" name="apellido">
-        </label>
-        <label for="usuario">
-            Nombre de usuario
-            <input type="text" id="usuario" name="usuario">
-        </label>
-        <label for="fechaNacimiento">
-            Fecha de nacimiento
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
-        </label>
-        <label for="domicilio">
-            Domicilio
-            <input type="text" id="domicilio" name="domicilio">
-        </label>
-        <label for="perfil">
-            ¿Qué deseas hacer en mercadoliebre?
-            <select name="perfil" id="perfil">
-                <option value="compra">Comprar</option>
-                <option value="venta">Vender</option>
-            </select>
-        </label>
-        <div class="intereses">
-            <label for="electro">Electro<input type="checkbox" name="intereses" id="electro"></label>
-            <label for="moda">Moda <input type="checkbox" name="intereses" id="moda"></label>
-            <label for="hogar">Hogar <input type="checkbox" name="intereses" id="hogar"></label>
-            <label for="jugueteria">Jugueteria <input type="checkbox" name="intereses" id="jugueteria"></label>
-            <label for="vida sana">Vida sana <input type="checkbox" name="intereses" id="vidaSana"></label>
+<header>
+       
+        <div class="headerFlex">
+            <img src="/images/logo-mercado-liebre.svg" alt="logo" class="logo">
+            <div class="buscador">
+                <input type="search" name="" id="" placeholder="Buscar productos, marcas, etc..">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div>
+            <p class="descripHeader"> <i class="fa-sharp fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>       
         </div>
-            
-        <label for="fotoDeUsuario">
-            <input type="file">
-        </label>
-        <label for="contraseña">
-            <input type="password" name="contraseña" id="contraseña">
-        </label>
-        <label for="contraseña2">
-            <input type="password" name="contraseña2" id="contraseña2">
-        </label>
-        <a href="/"><button type="submit">Enviar</button></a>
-        <a href="/"><button type="reset">Reset</button></a>
+        <div class="links">
+            <ul class="listaLinks1">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">ayuda</a></li>
+            </ul>
+            <ul class="listaLinks2">
+                <li><a href="/registro">Creá tu cuenta  <i class="fa-sharp fa-solid fa-id-card"></i> </a></li>
+                <li><a href="/ingreso">Ingresá <i class="fa-sharp fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras <i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="burger-menu-div">
+            <i class="fas fa-bars icon-burger-menu"></i>
+        </div>
+</header>
+<body>
+    
+    <div class="formulario">
+        <form action="">
+            <label for="nombre">
+                Nombre
+                <input type="text" id="nombre" name="nombre">
+            </label>
+            <label for="apellido">
+                Apellido
+                <input type="text" id="apellido" name="apellido">
+            </label>
+            <label for="usuario">
+                Nombre de usuario
+                <input type="text" id="usuario" name="usuario">
+            </label>
+            <label for="fechaNacimiento">
+                Fecha de nacimiento
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            </label>
+            <label for="domicilio">
+                Domicilio
+                <input type="text" id="domicilio" name="domicilio">
+            </label>
+            <label for="perfil">
+                ¿Qué deseas hacer en mercadoliebre?
+                <select name="perfil" id="perfil">
+                    <option value="compra">Comprar</option>
+                    <option value="venta">Vender</option>
+                </select>
+            </label>
+            <div class="intereses">
+                <p>¿Cuáles son tus intereses?</p>
+                <label for="electro" class="checkLabel">Electro<input type="checkbox" name="intereses" id="electro"></label>
+                <label for="moda" class="checkLabel">Moda <input type="checkbox" name="intereses" id="moda"></label>
+                <label for="hogar" class="checkLabel">Hogar <input type="checkbox" name="intereses" id="hogar"></label>
+                <label for="jugueteria" class="checkLabel">Jugueteria <input type="checkbox" name="intereses" id="jugueteria"></label>
+                <label for="vida sana" class="checkLabel">Vida sana <input type="checkbox" name="intereses" id="vidaSana"></label>
+            </div>
+                
+            <label for="fotoDeUsuario">
+                Ingrese una foto para su usuario
+                <input type="file" class="botonFotoUsuario" >
+            </label>
+            <label for="contraseña">
+                Ingrese su contraseña
+                <input type="password" name="contraseña" id="contraseña">
+            </label>
+            <label for="contraseña2">
+                Repita su contraseña...
+                <input type="password" name="contraseña2" id="contraseña2">
+            </label>
+            <a href="/"><button type="submit">Enviar</button></a>
+            <a href="/"><button type="reset">Reset</button></a>
 
-    </form>
+        </form>
+    </div>
 </body>
 </html>
