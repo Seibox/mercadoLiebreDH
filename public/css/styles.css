@@ -12,6 +12,7 @@ img{
     width: 100%;
 }
 body{
+    position: absolute;
     background-color: #ebebeb;
 }
 
@@ -19,14 +20,20 @@ body{
 /* Header */
 
 header{
+    position: fixed;
+    z-index: 10;
     background-color:#EAC926;
     text-align: center;
+    width: 100%;
+    height: 22vh;
 }
+
 .headerFlex{
     display: flex;
     flex-wrap: wrap;
     align-items: center; 
 }
+
 .logo{
     width: 50%;
 }
@@ -64,6 +71,14 @@ header li{
     margin: 0.5rem;
     display: none;
 }
+.listaLinks1{
+    position: relative;
+    left: 5%;
+}
+.listaLinks2{
+    position: relative;
+    right: 5%;
+}
 .burger-menu-div{ 
     text-align: center;
 }
@@ -75,14 +90,18 @@ header li{
     background-color: #1259c3;
     border-radius: 0.25rem;
 }
-.banner{
-    margin-bottom: -1rem;
-}
+
 /* Main */
 main{
+    
+    top: 50%;
     width: 90%;
     text-align: center;
     margin: auto;
+
+}
+.banner{
+    margin-top: 22vh;
 }
 .titulares{
     font-size: 24px;
@@ -111,6 +130,9 @@ p{
 }
 .fa-truck{
     color: #39b54a;
+    position: absolute;
+    right: 10%;
+    top: -10%;
 }
 
 .precioYDescuento{
@@ -121,11 +143,13 @@ p{
 }
 
 article{
+    position: relative;
     width: 90%;
     background-color: white;
     margin: 5px 5px;
 }
 .bloque-info{
+    position: relative;
     text-align: left;
     background-color:white;
     border-top: 1px solid #ebebeb;
@@ -167,7 +191,7 @@ footer p{
         width: 47%;
     }
     .descrip{
-        display: inline;
+        display: none;
     }
     
     .links{
@@ -189,7 +213,14 @@ footer p{
         width: 22%;
     }
     .descrip{
-        display: inline;
+        display: none;
+    }
+
+    .banner{
+        margin-top: 9vh;
+    }
+    header{
+        height: 9vh;
     }
     .headerFlex{
         display: flex;
